@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>851</width>
+    <height>637</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(0, 0, 45);
+color:rgb(255, 219, 60);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>50</y>
+      <width>811</width>
+      <height>641</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="matplotlib"/>
+   </widget>
+   <widget class="QComboBox" name="crystal">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>200</y>
+      <width>271</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 24px;
+font: bold;
+color:rgb(255, 219, 88);
+border:none;</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>KTP</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>BBO</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PPLN:MgO</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PPLN</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>LiNbO3</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PPKTP</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>LBO</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_landapump">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>330</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 20px;
+font: bold;
+color:rgb(255, 219, 88);
+border:none;</string>
+    </property>
+    <property name="text">
+     <string>λpump[nm]</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="landapump">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>330</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 18px;
+text-align:center;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>520</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 219, 88);
+color:rgb(0, 0, 45);
+font-size: 20px;
+border-radius:8px;</string>
+    </property>
+    <property name="text">
+     <string>calculate</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>70</y>
+      <width>271</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 24px;
+font: bold;
+color:rgb(255, 219, 88);
+border:none;</string>
+    </property>
+    <property name="text">
+     <string>SPDC</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="degreeSlider">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>440</y>
+      <width>201</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="degreeNumber">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>430</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelT">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>430</y>
+      <width>31</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 20px;
+font: bold;
+color:rgb(255, 219, 88);
+border:none;</string>
+    </property>
+    <property name="text">
+     <string>θ</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>851</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
